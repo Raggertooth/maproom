@@ -19,4 +19,4 @@ Thanks for your interest in improving Maproom. Before making a large change, ope
 - Do not include real personal, customer, or confidential data in examples or screenshots.
 - Avoid introducing generated dependency directories or local map data into commits.
 
-By submitting a contribution, you agree that it may be distributed under the project license once the maintainer selects and adds one. Until then, the project has no license granting reuse rights; please open an issue if you need licensing clarity before contributing.
+By submitting a contribution to this repository, you agree that it may be distributed under the project's [MIT License](LICENSE).

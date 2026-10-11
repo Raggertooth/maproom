@@ -72,6 +72,7 @@ The editor can export OPML and SVG, create PNG images, and print to PDF. Map dat
 - [Development guide](docs/development.md) — local setup and project structure
 - [Contributing](CONTRIBUTING.md) — how to propose changes
 - [Security](SECURITY.md) — local network boundary and vulnerability reporting
+- [MIT License](LICENSE) — reuse and distribution terms
 
 ## Current limitations
 
@@ -83,5 +84,5 @@ The editor can export OPML and SVG, create PNG images, and print to PDF. Map dat
 
 ## Project status
 
-Maproom is an early, working project. The editor and MCP tools are implemented; the data model and export formats may evolve. The project has no selected software license yet. Public visibility lets people view and download the source; it does not by itself grant permission to reuse, modify, or redistribute it. A license will be added once the maintainer chooses the terms.
+Maproom is an early, working project. The editor and MCP tools are implemented; the data model and export formats may evolve. Maproom is distributed under the MIT License. See [LICENSE](LICENSE) for the terms.
 
