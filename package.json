@@ -1,0 +1,38 @@
+{
+  "name": "maproom",
+  "version": "0.1.0",
+  "description": "Local-first mind-map editor and MCP server for AI-assisted software development diagrams.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c cyan,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "tsx watch src/server/http.ts",
+    "dev:web": "vite",
+    "build": "tsc -b && vite build && npm run build:server",
+    "build:server": "esbuild src/server/http.ts src/server/mcp.ts --bundle --platform=node --format=esm --outdir=dist/server",
+    "start": "node dist/server/http.js",
+    "mcp": "node dist/server/mcp.js",
+    "smoke:mcp": "tsx scripts/smoke-mcp.ts",
+    "test": "vitest run --root .",
+    "check": "tsc -b --pretty false"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "latest",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}

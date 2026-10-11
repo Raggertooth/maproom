@@ -1,0 +1,5 @@
+node_modules/
+data/maps.json
+work/
+.DS_Store
+*.tsbuildinfo
